@@ -4,9 +4,9 @@ def read(some_file):
 # """Read the files chosen and display it on the screen."""
     for files in some_file:
         with open(files,"r") as file_1:
-            f_contents = ""
-            f_contents += file_1.read()
-            print(f_contents)
+            file_contents = ""
+            file_contents += file_1.read()
+            print(file_contents)
 
 def write(some_file):
 # """Write a certain text per file."""
@@ -40,11 +40,11 @@ def cat(some_file):
 
     for files in some_file:
         with open(files,"r+") as file_1:
-            f_contents = ""
-            f_contents += file_1.read()
+            file_contents = ""
+            file_contents += file_1.read()
 
             file_2 = open(newfile,"a")
-            file_2.write(f_contents)
+            file_2.write(file_contents)
             
 parser = argparse.ArgumentParser()
     
