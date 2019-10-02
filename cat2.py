@@ -1,7 +1,7 @@
 import argparse
 
 def read(some_file):
-# """Read the files chosen and display it on the screen."""
+    """Read the files chosen and display it on the screen."""
     for files in some_file:
         with open(files,"r") as file_1:
             file_contents = ""
@@ -9,21 +9,21 @@ def read(some_file):
             print(file_contents)
 
 def write(some_file):
-# """Write a certain text per file."""
+    """Write a certain text per file."""
     for files in some_file:
         with open(files,"w+") as file_1:
             file_1.write(input("What do you want to write in %s?" % [files]))
 
 
 def append(some_file):
-# """Append a certain text per file."""
+    """Append a certain text per file."""
     for files in some_file:
         with open(files,"a+") as file_1:
             file_1.write(input("What do you want to append in %s?" % [files]))
 
 
 def create(some_file):
-# """Create files."""
+    """Create files."""
     for files in some_file:       
         with open(files,"a+") as file_1:
             file_1.close()
@@ -35,7 +35,7 @@ def create(some_file):
         
 
 def cat(some_file):
-# """Copy all the contents of chosen files then cat it in a specific file."""
+    """Copy all the contents of chosen files then cat it in a specific file."""
     new_file = input("Where do you want to cat it?")
 
     for files in some_file:
