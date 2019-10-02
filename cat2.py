@@ -36,14 +36,14 @@ def create(some_file):
 
 def cat(some_file):
 # """Copy all the contents of chosen files then cat it in a specific file."""
-    newfile = input("Where do you want to cat it?")
+    new_file = input("Where do you want to cat it?")
 
     for files in some_file:
         with open(files,"r+") as file_1:
             file_contents = ""
             file_contents += file_1.read()
 
-            file_2 = open(newfile,"a")
+            file_2 = open(new_file,"a")
             file_2.write(file_contents)
             
 parser = argparse.ArgumentParser()
